@@ -10,7 +10,7 @@ public class MemberController {
 	@Autowired
 	IMemberService memberService;
 
-	@RequestMapping(value = "login")
+	@RequestMapping(value = "/login")
 	public String login(MemberDto dto) {
 		if (memberService.login()) {
 			return null;
@@ -19,7 +19,7 @@ public class MemberController {
 		}
 	}
 
-	@RequestMapping(value = "register")
+	@RequestMapping(value = "/register")
 	public String register(MemberDto dto) {
 		if (memberService.register()) {
 			return null;
@@ -27,4 +27,23 @@ public class MemberController {
 			return null;
 		}
 	}
+	
+	@RequestMapping(value = "/loginCheck")
+	public String loginCheck(MemberDto dto) {
+		if (memberService.loginCheck()) {
+			return null;
+		} else {
+			return null;
+		}
+	}
+	
+	@RequestMapping(value = "/idCheck")
+	public String idCheck(MemberDto dto) {
+		if (memberService.idCheck()) {
+			return null;
+		} else {
+			return null;
+		}
+	}
+	
 }

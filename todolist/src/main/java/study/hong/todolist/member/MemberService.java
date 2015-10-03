@@ -21,4 +21,16 @@ public class MemberService implements IMemberService{
 		return false;
 	}
 
+	@Override
+	public boolean idCheck() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean loginCheck() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
 }

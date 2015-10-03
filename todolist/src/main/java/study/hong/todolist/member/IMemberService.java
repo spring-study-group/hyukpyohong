@@ -4,5 +4,7 @@ public interface IMemberService {
 	
 	boolean login();
 	boolean register();
+	boolean idCheck();
+	boolean loginCheck();
 
 }
